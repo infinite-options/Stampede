@@ -23,20 +23,20 @@ class Comment extends Component {
   }
 
   async getRandomImage() {
-  //   try {
-  //     const response = await axios.get(
-  //       "https://dog.ceo/api/breeds/image/random"
-  //     )
-  //     console.log(response)
-  //     this.setState({
-  //       imgURL: response.data.message,
-  //     })
-  //   } catch (err) {
-  //     console.log("error fetching image:", err)
-  //   }
-  // }
-  // componentDidMount() {
-  //   this.getRandomImage()
+    try {
+      const response = await axios.get(
+        "https://dog.ceo/api/breeds/image/random"
+      )
+      console.log(response)
+      this.setState({
+        imgURL: response.data.message,
+      })
+    } catch (err) {
+      console.log("error fetching image:", err)
+    }
+  }
+  componentDidMount() {
+    this.getRandomImage()
   }
 
   render() {

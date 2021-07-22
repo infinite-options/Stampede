@@ -9,7 +9,7 @@ class CommentBox extends Component {
   render() {
     return (
       <div>
-        <h1 className="title">Enter a Number!</h1>
+        <h1 className="title">Number:</h1>
         <form onSubmit={this.addComment}>
           <div className="field">
             <div className="control">
