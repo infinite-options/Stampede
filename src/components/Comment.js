@@ -22,22 +22,22 @@ class Comment extends Component {
     return localeString
   }
 
-  async getRandomImage() {
-    try {
-      const response = await axios.get(
-        "https://dog.ceo/api/breeds/image/random"
-      )
-      console.log(response)
-      this.setState({
-        imgURL: response.data.message,
-      })
-    } catch (err) {
-      console.log("error fetching image:", err)
-    }
-  }
-  componentDidMount() {
-    this.getRandomImage()
-  }
+  // async getRandomImage() {
+  //   try {
+  //     const response = await axios.get(
+  //       "https://dog.ceo/api/breeds/image/random"
+  //     )
+  //     console.log(response)
+  //     this.setState({
+  //       imgURL: response.data.message,
+  //     })
+  //   } catch (err) {
+  //     console.log("error fetching image:", err)
+  //   }
+  // }
+  // componentDidMount() {
+  //   this.getRandomImage()
+  // }
 
   render() {
     const { imgURL } = this.state

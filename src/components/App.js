@@ -2,6 +2,11 @@ import React, { Component } from "react"
 import CommentBox from "./CommentBox"
 import Comments from "./Comments"
 import Ably from "./Ably"
+import Time from "./Time"
+import WarGame from './WarGame.js';
+import Card from "./Card";
+
+import RandomBox from "./box"
 
 class App extends Component {
   constructor(props) {
@@ -41,8 +46,20 @@ class App extends Component {
         <div className="container">
           <div className="columns">
             <div className="column is-half is-offset-one-quarter">
-              <CommentBox />
-              <Comments comments={this.state.comments} />
+              {/* <RandomBox /> */}
+              <br />
+              <br />
+              <Card />
+              <br />
+              {/* <CommentBox />
+              <Comments comments={this.state.comments} /> */}
+              <br />
+              <Time />
+              <br />
+              <br />
+              <br />
+              <WarGame  />
+
             </div>
           </div>
         </div>
